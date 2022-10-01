@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+<body>
+
+    <!-- <ul id="ul"></ul> -->
+
+    <!-- <table id="t"></table> -->
+
+<!-- 1/october/2022 -->
+
+<label>Table</label>
+<input type="text" id="inp">
+<button type="submit" onclick="fun()">Search</button>
+<br><br>
+<div id="main"></div>
+
+
+
+
+    <script>
+        // for
+
+        function fun(){
+          var a = document.getElementById("inp").value;
+            for(var i = 1; i<=10; i++){
+                document.write(a+"x"+i+"="+i*a+"<br>");
+            
+        }
+    }
+        
+
+            
+
+            document.write(i+"For Loop"+ "<br>");
+            document.write("<li>"+"For-Loop"+"</li>");
+
+            document.getElementById("ul").innerHTML += "<li>" + "Pakistan" + "</li>";
+            document.getElementById("ul").innerHTML +="<li>" + "Islamic Country" + "</li>";
+
+            document.getElementById("t").innerHTML +=  i;
+
+           var two = document("2" + "x" + i + "=" + i*2 +"<br>");
+
+
+
+
+          
+        // while
+         function fun(){
+            var a = document.getElementById("inp").value;
+            var i = 1;
+            while(i<=10){
+                // document.getElementById("main").innerHTML = a+"x"+i+"="+i*a+"<br>";
+                document.write(a+"x"+i+"="+i*a+"<br>");
+                i = i+1;
+            }
+        }
+
+        var i = 1;
+        while(i<=10){
+            document.write("Pakistan"+"<br>");
+            i = i+1;
+        }
+        // do while
+
+        var i = 1;
+       do {
+        document.write("Pakistan"+"<br>");
+        i = i+1;
+        
+       }
+       while(i<=10);
+
+
+
+    
+    </script>
+    
+</body>
+</html>
