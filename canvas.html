@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="canvas" height="300px" width="300px" style="border:1px solid black;">
+
+    </canvas>
+    <script>
+        var can = document.getElementById("canvas");
+        var cntxt = can.getContext("2d");
+
+        // to draw a diagonal line
+        // cntxt.moveTo(0,0);
+        // cntxt.lineTo(300,300);
+        // cntxt.stroke();
+
+        // to draw Rectangle
+        // cntxt.fillStyle="red";
+        // cntxt.fillRect(15,17,150,150);
+        // cntxt.fill();
+        // cntxt.lineWidth=4;
+        // cntxt.strokeStyle="green";
+        // cntxt.strokeRect(15,17,150,150);
+        // cntxt.stroke();
+
+        // to draw Circle
+        // cntxt.beginPath();
+        // cntxt.fillStyle="green";
+        // cntxt.strokeStyle="blue";
+        // cntxt.arc(140,130,50,0,Math.PI*2);
+        // cntxt.fill();
+        // cntxt.stroke();
+
+        // for text
+        cntxt.font="40px arial";
+        cntxt.fillStyle="red";
+        cntxt.strokeStyle="blue";
+        cntxt.fillText("Iman", 40,40);
+        cntxt.strokeText("Iman",40,40);
+        cntxt.fill();
+        cntxt.stroke();
+
+    </script>
+</body>
+</html>
